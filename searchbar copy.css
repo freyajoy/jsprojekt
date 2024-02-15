@@ -43,7 +43,7 @@ form {
   width: 36px; /* Set the width and height to be equal for a circle */
   height: 36px;
   background-color: #F1641E; /* Button color */
-  background-image: url(søg.png); /* Path to your search icon */
+  background-image: url(images/søg.png); /* Path to your search icon */
   background-size: 60%; /* Size of the icon */
   background-repeat: no-repeat;
   background-position: center;

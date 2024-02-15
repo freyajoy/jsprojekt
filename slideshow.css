@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    max-width: 500px;
+    margin: 40px;
+  }
+  
+  /* Hide the images by default */
+  .slides {
+    display: none;
+    border-radius: 10px;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  .image {
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    height: 40px;
+    width: 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    line-height: 40px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 50%;
+  }
+  
+  /* On hover, add a different backgroundcolor */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(200, 200, 200);
+  }
+  
+  /* Three thumbnails in a row */
+  .thumbnailRow {
+    float: left;
+    width: 100px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .thumbnail {
+    opacity: 0.6;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .active,
+  .thumbnail:hover {
+    opacity: 1;
+  }
+
+  /* Style for active thumbnail */
+.thumbnail.active, .thumbnail:hover {
+  opacity: 1;
+  border: 2px solid black; /* Adds a black border */
+}
