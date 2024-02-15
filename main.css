@@ -1,0 +1,318 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+    background-color: pink;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#favorit-icon{
+    color: #666666;
+}
+
+#klokke-icon{
+    color: #666666;
+}
+
+#shop-icon{
+    color: #666666;
+}
+#favorit-icon:hover{
+    background: #F6F6F6;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#klokke-icon:hover{
+    background: #F6F6F6;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#shop-icon:hover{
+    background: #F6F6F6;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu {
+    background: #999;
+}
+
+
+.navBar .menuToggle{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+} 
+
+.navBar {
+    position: relative;
+    width: 150px; /* Adjusted for more space */
+    height: auto; /* Changed to auto to accommodate content */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Added to allow items to wrap if needed */
+}
+
+.navBar:hover{
+    background: #f6f6f6;
+}
+
+.navBar .menuToggle {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.navBar .menuToggle::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+        height: 2px;
+    background: #555;
+    box-shadow: 0 6px 0 #555,
+    0 -6px 0 #555;
+    border-radius: 10px;
+}
+
+nav .menu{
+    position: absolute;
+    top: calc(100% + 30px);
+    right: 1000px;
+    width: 200px;
+    min-height: 100px;
+    background: #ffffff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1) ;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+nav .menu.active{
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border: #ffffff;
+}
+
+nav .menu ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background: #ffffff;
+}
+
+nav .menu ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: 0.5;
+}
+
+nav .menu ul li:hover{
+    background: #f5f5f5;
+    transition: 0s;
+
+}
+
+
+nav .menu ul li a{
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .menu::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 35px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    transform: rotate(45deg);
+
+}
+
+.navBar .profile{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navBar .profile h3{
+    text-align: end;
+    font-weight: 500;
+    line-height: 0.35em;
+    color: #555;
+}
+
+#top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    padding: 8px 0;
+}
+
+#top-row > div, #top-row > div > i {
+    margin: 0 8px; 
+}
+
+#logo img {
+    height: 50px; 
+}
+
+#bot-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 8px 0; 
+}
+
+#bot-row ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bot-row li {
+    margin: 0 8px; 
+    color: #666666;
+}
+
+#bot-row a {
+    text-decoration: none;
+    color: #666666; 
+    font-size: 16px; 
+}
+
+.hover{
+    color: #666666;
+    text-decoration: underline;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+#logo img{
+    width: 80px;
+    height: auto;
+}
+
+.review-system {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: ltr;
+    font-size: 25px;
+  }
+  
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+  }
+
+  
+  #comment{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  #comment textarea{
+    border: #1e1e1e solid 1px;
+  }
+  
+  #submit-review {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #comment:focus {
+    border-color: #9ecaed; /* Changes the border color to highlight when focused */
+    box-shadow: 0 0 5px #9ecaed; /* Adds a glow effect to emphasize focus */
+  }
+
+  .review {
+    border-top: solid #666666;
+    border-bottom: solid #666666;
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+   text-align: center; /* Center the stars if needed */
+  }
+
+  .selected {
+    color: rgb(147, 49, 101);
+  }
+
+  #submit-review{
+    background: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+  }
+  
+@media (max-width: 768px) {
+    #top-row, #bot-row ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top-row > div, #bot-row li {
+        margin: 5px 0; 
+    }
+}
