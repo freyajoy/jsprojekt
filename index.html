@@ -4,10 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jsprojekt.css">
-    <script src="signin.js"></script>
-    <title>Etsy</title>
-</head>
-<body>
-    
-</body>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="navbar.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/1a674daea2.js"
+      crossorigin="anonymous"></script>
+   </head>
+   <body>
+    <nav>
+      <!-- logo -->
+      <div id="top-row">
+        <div id="logo">
+          <img src="images/etsy-logo.png" alt="logo" />
+        </div>
+        <!-- drop start -->
+
+        <div class="navBar">
+          <div class="menuToggle"></div>
+          <div class="profile">
+            <h3>Categories</h3>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li class="hover">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li class="hover">
+              <a href="#">
+                <i class="fa-regular fa-address-book"></i>
+                Contact
+              </a>
+            </li>
+            <li class="hover">
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- drop slut -->
+        <div id="search"></div>
+        <div id="favorit-icon">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div id="klokke-icon">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div id="signin-container"></div>
+        <div id="shop-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+      <div id="bot-row">
+        <ul>
+          <li class="hover"><a href="#">Valentine's Day Shop</a></li>
+          <li>></li>
+          <li class="hover"><a href="#">Home Favorites</a></li>
+          <li>></li>
+          <li class="hover"><a href="#">Fashion Finds</a></li>
+          <li>></li>
+          <li class="hover"><a href="#">Wall Art</a></li>
+          <li>></li>
+          <li class="hover"><a href="#">Gift Guids</a></li>
+          <li>></li>
+          <li class="hover"><a href="#">Registry</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="review-system">
+      <h2>What do you think of our products</h2>
+      <textarea id="comment" placeholder="I think..."></textarea>
+      <div class="rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+      <button id="submit-review">Submit Review</button>
+
+      <div id="reviews-container">
+        <!-- Reviews will be displayed here -->
+      </div>
+    </div>
+  </body>
 </html>
