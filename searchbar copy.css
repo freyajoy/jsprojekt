@@ -56,3 +56,12 @@ button:hover {
 }
 
 
+.options{
+  border: 1px solid #dedede;
+  border-top: none; /* Remove top border to blend with input */
+  position: absolute;
+  width: calc(100% - 2px); /* Account for border */
+  background: white;
+  z-index: 1000; /* Ensure it's above other content */
+  display: none; /* Hide by default */
+}
