@@ -13,7 +13,6 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
   padding-top: 20px; /* You can adjust this value based on the desired distance from the top */
   
 }
