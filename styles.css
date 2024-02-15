@@ -1,0 +1,232 @@
+.l-container h2 {
+    margin-bottom: 20px;
+}
+
+.l-container #myBtn {
+    float: right;
+    margin: 10px 50px;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #222222;
+    font-size: 13px;
+    font-weight: 500px;
+    padding: 10px 15px;
+
+}
+
+
+.l-container #myBtn:hover {
+    background-color: #e9e9e9; /* Ændrer farven ved hover */
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+
+  /* The Modal (background) */
+  .l-container .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Modal Content */
+  .l-container .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    max-width: 450px;
+    border-radius: 24px;
+    box-shadow: var(--clg-effect-sem-shadow-elevation-4, 
+    0px 1px 5px 0px rgba(0, 0, 0, 0.3019607843), 
+    0px 5px 20px 6px rgba(0, 0, 0, 0.1490196078));
+  }
+
+  .l-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.l-container label {
+    margin-bottom: 8px;
+}
+
+.l-container input {
+    padding: 9px 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px 0px inset rgba(14, 14, 14, 0.0901960784);
+    border-color:  rgba(14, 14, 14, 0.1803921569);
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+
+
+}
+
+.l-container .text {
+    color: black;
+    margin-bottom: 8px;
+}
+
+.l-container .checkbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.l-container .chkbox {
+    position: relative;
+}
+
+.l-container .chkbox input[type="checkbox"] {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    position: relative;
+    appearance: none;
+    opacity: 1; /* Gør det faktiske checkbox-element usynligt */
+    margin: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.l-container .chkbox input[type="checkbox"] :checked {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.l-container .chkbox input[type="checkbox"] :focus {
+    outline: none;
+}
+
+.l-container .chkbox input[type="checkbox"]::before {
+    content: ""; /* Skaber det tilpassede checkbox-udseende */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Sørger for, at border og padding ikke påvirker elementets størrelse */
+    pointer-events: none; /* Gør det muligt for klik på det faktiske checkbox-element under pseudo-elementet */
+}
+
+.l-container .chkbox input[type="checkbox"]:checked::before {
+    background-color: white;
+    content: ""; /* Unicode checkmark character */
+    font-size: 10px;
+    color: black;
+}
+
+
+.l-container .check-label {
+    margin-left: 5px; /* Juster dette efter dine behov */
+    color: #fff; /* Farven på teksten */
+}
+
+
+.l-container .checkbox-label::before {
+    content: "\2713";
+    color: white;
+    display: inline-block;
+    margin: 0 5px;
+    position: absolute;
+    left: 1px;
+    top: -6px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.l-container .button {
+    background-color: #222222;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 100%;
+
+
+}
+
+.l-container button:hover {
+    background-color: #3c3e3c;
+}
+  
+  /* The Close Button */
+  .l-container .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .l-container .close:hover,
+  .l-container .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .l-container .google-login-button {
+    display: flex;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3, padding 0.3, box-shadow 0.3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.l-container .google-login-button:hover {
+    background-color: #ffffff; /* Lidt mørkere blå ved hover */
+    cursor: pointer;
+    box-shadow: inset 0 0 10px 0 #3c3e3c;
+    padding: 11px 17px;
+
+}
+
+.l-container .google-logo {
+    max-width: 25px; /* Ændr størrelsen efter behov */
+  }
+
+  .l-container .line {
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .l-container .bottom-text {
+    position: relative;
+  }
+  
+  .l-container .bottom-text::before,
+  .l-container .bottom-text::after {
+    content: "";
+    display: inline-block;
+    width: 140px; /* Juster efter behov */
+    border-top: 1px solid #000; /* Stregfarve og egenskaber */
+    margin-left: 20px;
+    margin-right: 20px;
+  }

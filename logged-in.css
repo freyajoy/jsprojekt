@@ -1,0 +1,23 @@
+.hest-container body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hest-container h1 {
+    text-align: center;
+  }
+  
+  .hest-container .center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .hest-container .hest {
+    width: 400px;
+    margin-top: 20px; /* Juster efter behov */
+  }
