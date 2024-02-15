@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ form {
   
 }
 
-input[type="text"] {
+.search input[type="text"] {
   padding: 10px;
   padding-right: 50px; /* Leave space for the round button */
   border: 1px solid #ccc;
@@ -33,7 +35,7 @@ input[type="text"] {
   width: 600px; /* Set a width for your input or use a percentage */
 }
 
-button {
+.search button {
   position: absolute;
   right: 0%;
   border: none;
