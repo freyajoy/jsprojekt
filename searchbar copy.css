@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures padding doesn't affect the total width or height */
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Center the search-container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 20px; /* You can adjust this value based on the desired distance from the top */
+  
+}
+
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  padding-right: 50px; /* Leave space for the round button */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 600px; /* Set a width for your input or use a percentage */
+}
+
+button {
+  position: absolute;
+  right: 0%;
+  border: none;
+  border-radius: 50%; /* Makes the button round */
+  width: 36px; /* Set the width and height to be equal for a circle */
+  height: 36px;
+  background-color: #F1641E; /* Button color */
+  background-image: url(søg.png); /* Path to your search icon */
+  background-size: 60%; /* Size of the icon */
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Optional: Adjust the button's hover effect */
+button:hover {
+  background-color: #f1641ea0;
+}
+
+
